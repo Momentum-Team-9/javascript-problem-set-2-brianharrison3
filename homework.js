@@ -2,6 +2,20 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
+
+function remove (['Brian', 'Ray', 'Braylon', 'Justin'], 'Justin') {
+
+let brothers = ["Brian", "Ray", "Braylon", "Justin"]
+console.log(brothers);
+
+let idx = brothers.indexOf('Justin');
+brothers.splice(idx, 1);
+
+
+console.log(brothers);
+
+}
+
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
@@ -9,14 +23,50 @@
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+function remove (['Brian', 'Ray', 'Braylon', 'Justin'], 'Justin') {
+
+    let brothers = ["Brian", "Ray", "Braylon", "Justin"]
+    console.log(brothers);
+    
+    let idx = brothers.indexOf('Justin');
+    brothers.splice(idx, 1);
+    let realBrothers = [...brothers]
+    
+    console.log(realBrothers);
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+let scores = [45, 45, 35, 35, 25]
+let sum = 0
+
+for (let score of scores) {
+  sum += score
+}
+console.log(sum);
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+let scores = [45, 45, 35, 35, 25]
+let avg = 0;
+
+for (let i = 0,  {
+  avg += score;
+  score / score.length
+}
+
+console.log(avg);
+
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+let words = ['tapeworm', 'gnarly', 'armoire']
+let wordLengths = []
+
+for (let word of words) {
+  wordLengths.push(word.length)
+  
+}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
