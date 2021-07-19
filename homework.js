@@ -23,50 +23,46 @@ console.log(brothers);
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
-function remove (['Brian', 'Ray', 'Braylon', 'Justin'], 'Justin') {
+function remove (names, deletedname) {
 
     let brothers = ["Brian", "Ray", "Braylon", "Justin"]
     console.log(brothers);
     
-    let idx = brothers.indexOf('Justin');
+    let idx = names.indexOf('Justin');
     brothers.splice(idx, 1);
-    let realBrothers = [...brothers]
+    let names = [...brothers]
     
-    console.log(realBrothers);
+    console.log(names);
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
-let scores = [45, 45, 35, 35, 25]
-let sum = 0
 
+function sum (scores){
 for (let score of scores) {
   sum += score
 }
 console.log(sum);
+}
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
-let scores = [45, 45, 35, 35, 25]
-let avg = 0;
 
-for (let i = 0,  {
-  avg += score;
-  score / score.length
+function average(nums)
+for (let num of nums)  {
+  num += score;
+ let average = score / nums.length
 }
 
-console.log(avg);
+
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
-let words = ['tapeworm', 'gnarly', 'armoire']
-let wordLengths = []
-
-for (let word of words) {
-  wordLengths.push(word.length)
-  
+function minimum(nums){
+Math.min.apply(Math, nums) 
 }
+
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
@@ -92,8 +88,17 @@ for (let word of words) {
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+function selectionSort(nums)
+
+
+
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+
+function textList(array){
+  array.join()
+}
